@@ -2,8 +2,8 @@
 RECORD CHECK  -  my version
 ===========================
 
-Name  :
-Lane  :  AI / Cyber / IT      (delete two)
+Name  : DEV PATEL
+Lane  : Cyber     
 Date  :
 
 Run it:   python template.py
@@ -11,7 +11,6 @@ Run it:   python template.py
 Work through the numbered sections in order. Each one tells you what it must do.
 Delete these instructions as you replace them with your code.
 """
-
 # ==================================================================== INPUT
 # 1. Ask the user for your three values.
 #
@@ -25,7 +24,6 @@ label = ""      # : replace with an input() call
 first = 0.0     # : replace with an input() call, converted
 second = 0.0    # : replace with an input() call, converted
 
-
 # ================================================================== PROCESS
 # 2. Work out what you were NOT given.       [Typical and above]
 #
@@ -37,7 +35,6 @@ second = 0.0    # : replace with an input() call, converted
 difference = 0.0   # 
 percent = 0.0      # 
 
-
 # =================================================================== OUTPUT
 # 3. Print the report.
 #
@@ -48,16 +45,6 @@ percent = 0.0      #
 #    Useful:   f"{value:>10.2f}"    right-aligned, 2 decimal places
 #              f"{value:>+10.2f}"   the same, but always shows the sign
 
-print()
-print("=" * 34)
-print(f"  RECORD CHECK  -  {label}")
-print("=" * 34)
-
-# : your report lines go here
-
-print("=" * 34)
-
-
 # ==========================================================================
 # 4. Before you finish:
 #
@@ -65,3 +52,24 @@ print("=" * 34)
 #    [ ] Run it with a total of 0 and write the error in your journal
 #    [ ] Check every variable name says what it holds
 #    [ ] Show it to the person next to you
+
+
+label = input("Enter a SOURCE IP: ")
+first = float(input("Enter the FAILED LOGIN: "))
+second = float(input("Enter the TOTAL ATTEMPTS: "))
+
+difference = first - second 
+percent = (first / second) * 100
+
+print()
+print("=" * 34)
+print(f"  RECORD CHECK  -  {label}")
+print("=" * 34)
+
+print(f" Failed Login:    {first:>10.2f}")
+print(f" Total Attempts:   {second:>10.2f}")
+print(f" Difference:     {difference:>+10.2f}")
+print(f" Percentage:     {percent:>10.2f}%")
+print(f" Summary:        Record processed.") 
+
+print("=" * 34)
