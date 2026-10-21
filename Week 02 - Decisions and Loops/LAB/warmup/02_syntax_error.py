@@ -4,6 +4,7 @@
 attempts = 3
 max_attempts = 3
 
-while attempts <= max_attempts
+while attempts <= max_attemptS:
+    value = float(input("Enter a value: "))
     print("checking...")
     attempts += 1

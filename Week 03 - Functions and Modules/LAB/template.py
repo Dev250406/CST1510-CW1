@@ -81,3 +81,24 @@ print("=" * 34)
 #    [ ] Run it with a total of 0 and note the error (do not fix it yet)
 #    [ ] Check every function does one job - if a function both calculates
 #        and prints, split it
+
+label = input("Enter a SOURCE IP: ")
+first = float(input("Enter the FAILED LOGIN: "))
+second = float(input("Enter the TOTAL ATTEMPTS: "))
+
+difference = first - second 
+percent = (first / second) * 100
+status = "OK" if percent < 90 else "WARNING" if percent < 100 else "OVER LIMIT"
+
+print()
+print("=" * 34)
+print(f"  RECORD CHECK  -  {label}")
+print("=" * 34)
+
+print(f" Failed Login:    {first:>10.2f}")
+print(f" Total Attempts:   {second:>10.2f}")
+print(f" Difference:     {difference:>+10.2f}")
+print(f" Percentage:     {percent:>10.2f}%")
+print(f" Status:        {status:>10}") 
+
+print("=" * 34)
