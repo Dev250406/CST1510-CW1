@@ -4,5 +4,5 @@
 value = 23.7
 limit = 20
 
-if value > limit:
+if float(value) > limit:
     print("OVER LIMIT")

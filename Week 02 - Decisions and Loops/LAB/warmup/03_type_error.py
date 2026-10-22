@@ -4,7 +4,7 @@
 limit = 20
 value = input("Value: ")
 
-if value > limit:
+if float(value) > limit:
     print("OVER")
 else:
     print("OK")
