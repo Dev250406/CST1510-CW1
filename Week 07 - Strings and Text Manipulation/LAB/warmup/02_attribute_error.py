@@ -4,5 +4,5 @@
 value_text = "87"
 value = float(value_text)
 
-cleaned = value.strip()
+cleaned = str(value).strip()
 print(cleaned)
